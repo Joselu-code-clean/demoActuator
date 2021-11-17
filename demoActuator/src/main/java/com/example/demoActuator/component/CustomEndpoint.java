@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @RestControllerEndpoint(id = "customEndpoint")
 public class CustomEndpoint {
 
-	@GetMapping("/")
+	@GetMapping("/custom")
 	public ResponseEntity<String> customEndPoint(){
 		return new ResponseEntity<>("Bienvenido a un metodo endpoint personalizado", HttpStatus.OK);
 	}
